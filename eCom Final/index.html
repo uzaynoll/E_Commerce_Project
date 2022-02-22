@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <title>E-Commerce</title>
+  </head>
+  <body onload="bannerScrollActive()">
+    <!--main div-->
+    <div class="div1">
+      <!--sub div-->
+      <div class="div2">
+        <!--header-->
+        <div class="div3">
+          <div class="logo">
+            <img src="logoitis.png" style="height: 110px; width: 110px" />
+          </div>
+          <div class="ecomname">shopmrbeast.com</div>
+          <div class="search">
+            <input type="text" class="searchTerm" placeholder="Search me !!!" />
+            <button type="submit" class="searchButton">
+              <i class="fa fa-search"></i>
+            </button>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-youtube"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <div class="center">
+              <button onclick="toggleForm()">Signup</button>
+            </div>
+          </div>
+        </div>
+        <div class="overlay-form">
+          <div class="close-btn" onclick="toggleForm()">&times;</div>
+          <h1>Create a new account</h1>
+          <p>Join our community. Let's set up your account</p>
+          <div class="form-element">
+            <label for="fullname">Fullname</label>
+            <input type="text" id="fullname">
+          </div>
+          <div class="form-element">
+            <label for="email">Email</label>
+            <input type="email" id="email">
+          </div>
+          <div class="form-element">
+            <label for="password-1">Password</label>
+            <input type="password" id="password-1">
+          </div>
+          <div class="form-element">
+            <label for="password-2">Confirm password</label>
+            <input type="password" id="password-2">
+          </div>
+          <div class="form-element">
+            <button>Signup</button>
+          </div>
+        </div>
+        <!--end of header-->
+        <div class="div4">
+          <div class="div41">
+            <a href="#">Electronic Devices</a>
+            <a href="#">Health & Beauty</a>
+            <a href="#">Babies & Toys</a>
+            <a href="#">Groceries & Pets</a>
+            <a href="#">Home & Lifestyle</a>
+            <a href="#">Women's Fashion</a>
+            <a href="#">Men's Fashion</a>
+            <a href="#">Sports & Outdoor</a>
+            <div class="news">
+              <b align="center">Dummy Lorem</b>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+                vestibulum eget ipsum suscipit gravida.
+                <span id="dots">...</span>
+
+                <span id="ReadMore">
+                  Etiam consequat dui in suscipit varius. Vivamus iaculis, purus
+                  ac semper gravida, est mauris sollicitudin ligula, vitae
+                  condimentum ante nisl quis ante. Nulla non orci a erat
+                  vehicula tempus. Sed vulputate est sit amet velit luctus, sit
+                  amet pulvinar nisl egestas. Vestibulum odio ex, convallis non
+                  lectus non, ornare aliquet enim. Morbi vitae erat vitae lacus
+                  scelerisque blandit vitae nec augue. Sed rutrum sed nulla nec
+                  accumsan. Praesent a scelerisque metus, a tempus libero. Proin
+                  vel faucibus odio. Suspendisse in massa eget tortor fringilla
+                  accumsan. Pellentesque porttitor luctus eros, vel condimentum
+                  enim rutrum varius. Cras eu nisl augue.
+                </span>
+              </p>
+              <button
+                onclick="readMoreFunction()"
+                id="buttonReadMore"
+                class="button"
+              >
+                Read More
+              </button>
+            </div>
+          </div>
+          <div class="div42">
+            <div class="banners">
+                <div class="box">
+                    <div class="ribbon ribbon-top-left"><span>Shop Now</span></div>
+                </div>
+              <div class="banner" id="banner">
+                  <div class="banner-items active">
+                      <img class="rounded-border" src="sale.jpg" alt="banner">
+                  </div>
+                  <div class="banner-items">
+                      <img class="rounded-border" src="sale1.jfif" alt="banner">
+                  </div>
+                  <div class="banner-items">
+                      <img class="rounded-border" src="sale2.jfif" alt="banner">
+                  </div>
+                  <div class="banner-items">
+                      <img class="rounded-border" src="sale3.png" alt="banner">
+                  </div>
+              </div>
+              <ol class="banner-indicators" id="banner-indicators">
+                  <li class="fa fa-circle active"></li>
+                  <li class="fa fa-circle"></li>
+                  <li class="fa fa-circle"></li>
+                  <li class="fa fa-circle"></li>
+              </ol>
+          </div>
+            <div class="tab1">
+              <div class="overflow-hidden rounded-border">
+                          <a href = "doodlehoodie.html">
+                <img
+                  class="item-img rounded-border"
+                  src="hoodie.jpg"
+                  height="250"
+                  width="220"
+                /></a>
+              </div>
+              <a href="doodlehoodie.html">
+              DOODLE BEAST HOODIE<br /></a>$55.00
+              <div class="rentbuy">
+                <button class="button">Add to cart</button>
+              </div>
+            </div>
+            <div class="tab1">
+              <div class="overflow-hidden rounded-border">
+                <img
+                  class="item-img rounded-border"
+                  src="tshirt.jpg"
+                  height="250"
+                  width="220"
+                />
+              </div>
+              DOODLE BEAST TEE<br />$25.00
+              <div class="rentbuy">
+                <button class="button">Add to cart</button>
+              </div>
+            </div>
+            <div class="tab1">
+              <div class="overflow-hidden rounded-border">
+                <img
+                  class="item-img rounded-border"
+                  src="bhoodie.jpg"
+                  height="250"
+                  width="220"
+                />
+              </div>
+              MRBEAST STAMP HOODIE<br />$50.00
+              <div class="rentbuy">
+                <button class="button">Add to cart</button>
+              </div>
+            </div>
+            <div class="tab1">
+              <div class="overflow-hidden rounded-border">
+                <img
+                  class="item-img rounded-border"
+                  src="btshirt.jpg"
+                  height="250"
+                  width="220"
+                />
+              </div>
+              B FOR BEAST TEE<br />$25.00
+              <div class="rentbuy">
+                <button class="button">Add to cart</button>
+              </div>
+            </div>
+            <div class="tab1">
+              <div class="overflow-hidden rounded-border">
+                <img
+                  class="item-img rounded-border"
+                  src="bktshirt.jpg"
+                  height="250"
+                  width="220"
+                />
+              </div>
+              MRBEAST STAMP TEE<br />$25.00
+              <div class="rentbuy">
+                <button class="button">Add to cart</button>
+              </div>
+            </div>
+            <div class="tab1">
+              <div class="overflow-hidden rounded-border">
+                <img
+                  class="item-img rounded-border"
+                  src="sock.jpg"
+                  height="250"
+                  width="220"
+                />
+              </div>
+              MRBEAST 'HIGH ROLLER' SOCK<br />$18.00
+              <div class="rentbuy">
+                <button class="button">Add to cart</button>
+              </div>
+            </div>
+            <div class="tab1">
+              <div class="overflow-hidden rounded-border">
+                <img
+                  class="item-img rounded-border"
+                  src="pillow.jpg"
+                  height="250"
+                  width="220"
+                />
+              </div>
+              CLASSIC BEAST PLUSH PILLOW<br />$35.00
+              <div class="rentbuy">
+                <button class="button">Add to cart</button>
+              </div>
+            </div>
+            <div class="tab1">
+              <div class="overflow-hidden rounded-border">
+                <img
+                  class="item-img rounded-border"
+                  src="ybtshirt.jpg"
+                  height="250"
+                  width="220"
+                />
+              </div>
+              MRBEAST STRIPED LONGSLEEVE<br />$65.00
+              <div class="rentbuy">
+                <button class="button">Add to cart</button>
+              </div>
+            </div>
+            <div class="tab1">
+              <div class="overflow-hidden rounded-border">
+                <img
+                  class="item-img rounded-border"
+                  src="cap.jpg"
+                  height="250"
+                  width="220"
+                />
+              </div>
+              DOODLE BEAST DAD HAT<br />$25.00
+              <div class="rentbuy">
+                <button class="button">Add to cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="div5">&copy shopmrbeast.com</div>
+      </div>
+      <!--end of sub div-->
+    </div>
+    <!--end of main div-->
+  </body>
+</html>
+<script type="text/javascript">
+  function readMoreFunction() {
+    var dots = document.getElementById("dots");
+    var moreText = document.getElementById("ReadMore");
+    var btnText = document.getElementById("buttonReadMore");
+
+    if (dots.style.display == "none") {
+      dots.style.display = "inline";
+      btnText.innerHTML = "Read More";
+      moreText.style.display = "none";
+    } else {
+      dots.style.display = "none";
+      btnText.innerHTML = "Read Less";
+      moreText.style.display = "inline";
+    }
+  }
+
+  var sliders = document.getElementById("banner-indicators");
+        var length = sliders.childElementCount;
+        var banners = document.getElementById("banner");
+        var active = 0;
+        function bannerScroll(){
+            for(var i = 0; i < length; i++){
+                if (i == active){
+                    banners.children[i].className = "banner-items active";
+                    sliders.children[i].className = "fa fa-circle active";
+                } else {
+                    banners.children[i].className = "banner-items";
+                    sliders.children[i].className = "fa fa-circle";
+                }
+            }
+            active = (active + 1) % length;
+        }
+
+        function bannerScrollActive(){
+            setInterval(bannerScroll, 3000);
+        }
+        function toggleForm(){
+  document.body.classList.toggle('activeForm');
+}
+
+</script>
